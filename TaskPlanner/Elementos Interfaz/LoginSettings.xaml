@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="TaskPlanner.LoginSettings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="231" Width="470">
+    <Grid Height="231" Name="grid1" Width="472" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Rectangle Fill="#FFEEEEEE" RadiusX="10" RadiusY="10" Stroke="#55000000" Margin="13,4,13,13" />
+        <Rectangle Fill="#FFEEFFFF" Margin="24,11,22,21" RadiusX="10" RadiusY="10" Stroke="#55000000" />
+        <Label Margin="100,19,315,182" HorizontalContentAlignment="Right">Servidor:</Label>
+        <Label Margin="78,49,315,155" HorizontalContentAlignment="Right">Puerto:</Label>
+        <Label HorizontalContentAlignment="Right" Margin="100,79,315,125">Usuario:</Label>
+        <Label HorizontalContentAlignment="Right" Margin="78,109.52,315,94.48">Contraseña:</Label>
+        <Label HorizontalContentAlignment="Right" Margin="78,140,315,64">Database:</Label>
+        <TextBox GotFocus="TXT_SERVIDOR_GotFocus"  Margin="157,19,86,185" Name="TXT_SERVIDOR" MaxLength="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ToolTip="Introduce aquí la IP o dominio del servidor">127.0.0.1</TextBox>
+        <TextBox GotFocus="TXT_PUERTO_GotFocus"  HorizontalContentAlignment="Center" Margin="157,48.48,86,155.52" MaxLength="10" Name="TXT_PUERTO" VerticalContentAlignment="Center" ToolTip="Introduce aquí el puerto del servidor (3306 por defecto)">3306</TextBox>
+        <TextBox GotFocus="TXT_USUARIO_GotFocus"  HorizontalContentAlignment="Center" Margin="157,79,86,125" MaxLength="30" Name="TXT_USUARIO" VerticalContentAlignment="Center" ToolTip="Introduce aquí el usuario de la Base de datos">root</TextBox>
+        <PasswordBox GotFocus="TXT_PASSWORD_GotFocus"  Margin="157,109.923,86,94.077" Name="TXT_PASSWORD" MaxLength="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Password="" ToolTip="Introduce aquí la contraseña de usuario de la Base de datos" />
+        <TextBox GotFocus="TXT_DATABASE_GotFocus"  HorizontalContentAlignment="Center" Margin="157,139,86,65" MaxLength="50" Name="TXT_DATABASE" VerticalContentAlignment="Center" ToolTip="Introduce aquí el nombre de la Base de datos">taskplanner</TextBox>
+        <Button Margin="38,175,149,30" Name="BTN_SAVE" Click="BTN_SAVE_Click" ToolTip="Guarda la configuración y prueba la conexión">Guardar y probar Conexión</Button>
+        <Button Name="BTN_BACK" Margin="335,175,40,30" Click="BTN_BACK_Click" ToolTip="Regresar al Login">Atrás</Button>
+    </Grid>
+</UserControl>

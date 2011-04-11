@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="TaskPlanner.Profile"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="452" Width="472" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+    <Grid Height="451" Name="grid1" Width="471" ClipToBounds="True" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Rectangle Fill="#FFEEEEEE" RadiusX="10" RadiusY="10" Stroke="#55000000" Margin="13,6,13,13" Grid.ColumnSpan="2" />
+            <Rectangle Fill="#FFEEFFFF" RadiusX="10" RadiusY="10" Stroke="#55000000" Margin="29,23,30,215" />
+            <Rectangle Fill="#FFEEFFFF" RadiusX="10" RadiusY="10" Stroke="#55000000" Margin="29,254,30,30" />
+                <TextBox Margin="154,41,54,0" Name="TXT_NICK" VerticalContentAlignment="Center" IsEnabled="True" MaxLength="12" Height="26" VerticalAlignment="Top" IsReadOnly="True" Background="#05000000" ToolTip="Tu nick en el sistema" />
+                <Label HorizontalContentAlignment="Right" Margin="81,41,0,0" VerticalContentAlignment="Center" Height="26" HorizontalAlignment="Left" VerticalAlignment="Top" Width="68">Nick:</Label>
+                <TextBox Margin="154,78,54,0" Name="TXT_NOMBRE" VerticalContentAlignment="Center" MaxLength="20" Height="26" VerticalAlignment="Top" IsReadOnly="False" IsEnabled="True" ToolTip="Nombre real de usuario" />
+                <Label HorizontalContentAlignment="Right" Margin="81,78,0,0" VerticalContentAlignment="Center" Height="26" HorizontalAlignment="Left" VerticalAlignment="Top" Width="68">Nombre:</Label>
+                <TextBox Margin="154,115,54,0" Name="TXT_EMAIL" VerticalContentAlignment="Center" MaxLength="50" Height="27" VerticalAlignment="Top" ToolTip="Tu cuenta de e-mail" />
+                <Label HorizontalContentAlignment="Right" Margin="81,115,0,0" VerticalContentAlignment="Center" Height="27" HorizontalAlignment="Left" VerticalAlignment="Top" Width="68">E-Mail:</Label>
+                <Button Margin="55,156,54,267" Name="BTN_ACTUALIZAR" Click="BTN_ACTUALIZAR_Click" ToolTip="Guardar los cambios realizados">Actualizar Perfil</Button>
+                <Button Margin="55,194,54,229" Name="BTN_CHANGEPASS" Click="BTN_CHANGEPASS_Click">Cambiar Contraseña</Button>
+
+                <TextBox Margin="154,0,54,153" Name="TXT_ID" VerticalContentAlignment="Center" IsEnabled="True" MaxLength="11" Height="26" VerticalAlignment="Bottom" IsReadOnly="True" Background="#05000000" ToolTip="Identificador de usuario" />
+                <Label HorizontalContentAlignment="Right" Margin="81,0,0,153" VerticalContentAlignment="Center" Height="26" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="68">ID:</Label>
+                <TextBox Margin="154,0,54,118" Name="TXT_ESTADO" VerticalContentAlignment="Center" IsEnabled="True" MaxLength="15" Height="26" VerticalAlignment="Bottom" IsReadOnly="True" Background="#05000000" ToolTip="Tu estado en el sistema" />
+                <Label HorizontalContentAlignment="Right" Margin="81,0,0,118" VerticalContentAlignment="Center" Height="26" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="68">Estado:</Label>
+                <TextBox Margin="154,0,54,83" Name="TXT_F_REGISTRO" VerticalContentAlignment="Center" IsEnabled="True" MaxLength="25" Height="26" VerticalAlignment="Bottom" IsReadOnly="True" Background="#05000000" ToolTip="Tu fecha de registro" />
+                <Label HorizontalContentAlignment="Right" Margin="55,0,0,83" VerticalContentAlignment="Center" Height="26" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="94">Fecha Registro:</Label>
+                <TextBox Margin="154,0,54,49" Name="TXT_TIPO" VerticalContentAlignment="Center" IsEnabled="True" MaxLength="25" Height="26" VerticalAlignment="Bottom" IsReadOnly="True" Background="#05000000" ToolTip="Tipo de usuario" />
+                <Label HorizontalContentAlignment="Right" Margin="47,0,0,49" VerticalContentAlignment="Center" Height="26" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="102">Tipo de usuario:</Label>
+    </Grid>
+</UserControl>

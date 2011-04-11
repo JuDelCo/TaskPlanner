@@ -1,0 +1,16 @@
+SUGERENCIAS	-> Controlar RegEx hora de horarios
+		-> No poder poner fecha de finalización menor a la de inicio (cursos)
+		-> Boton descompletar tarea
+		-> Mostrar modo de filtro actual (que se indique)
+		-> Usar el registro de windows para guardar las opciones del servidor
+		-> Mejorar sistema fechas (con hora incluida)
+		-> Tabulador con un calendario
+		-> No poder introducir letras en casillas de fechas
+		-> Aumentar límite de descripción de tarea (800 ?)
+		-> Añadir vacaciones
+		-> En vez de usar DateTime.Now, coger hora del servidor
+		-> Añadir campo en usuario para indicar en el registro si está Online o Offline
+		-> Mejorar librería / forma de peticiones al host || Almacenar información en el programa para rapidez
+		-> Revisar Selection Changed en OrganizerSchedules (filtro)
+		-> No poder crear asignaturas y cursos con el mismo nombre (evitar problemas con el filtro)
+		-> Cambiar el nombre de usuario al final una vez cargado "hoy"

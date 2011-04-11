@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="TaskPlanner.Subject"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="64" Width="370">
+    <Grid>
+        <Rectangle Fill="#F9F9F9" RadiusX="5" RadiusY="5" Stroke="#55000000" Margin="0,1,0,1" Name="TaskRectangle" />
+        <Label Margin="12,0,37,37" Name="LBL_CURSO" VerticalContentAlignment="Center" FontSize="10">&lt;Curso&gt;</Label>
+        <Label Margin="12,15,37,21" Name="LBL_ASIGNATURA" VerticalContentAlignment="Center" FontSize="13" FontWeight="Bold">&lt;Nombre asignatura&gt;</Label>
+        <Label Margin="12,0,5,3" Name="LBL_LUGAR" VerticalContentAlignment="Center" Height="27" VerticalAlignment="Bottom">&lt;Lugar asignatura&gt;</Label>
+        <Button Margin="0,1" Name="BTN_HORARIO" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Opacity="0.3" Padding="1" IsTabStop="True" Click="BTN_HORARIO_Click" ToolTip="Mostrar detalles de la Asignatura"></Button>
+        <Button Margin="0,5.661,5,0" Name="BTN_ELIMINAR" Padding="0" FontSize="9" IsTabStop="True" BorderThickness="1" Background="#FFFF9999" Click="BTN_ELIMINAR_Click" Height="18" VerticalAlignment="Top" HorizontalAlignment="Right" Width="18" ToolTip="Eliminar Asignatura">X</Button>
+    </Grid>
+</UserControl>

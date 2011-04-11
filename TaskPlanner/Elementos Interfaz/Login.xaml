@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="TaskPlanner.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="206" Width="470">
+    <Grid Height="206" Name="grid1" Width="472" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Rectangle Fill="#FFEEEEEE" RadiusX="10" RadiusY="10" Stroke="#55000000" Margin="13,4,13,13" />
+        <Label Height="65" Margin="25,1,23,0" Name="label1" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="35" FontWeight="Bold">Task Planner</Label>
+        <Label Height="23" HorizontalAlignment="Right" Margin="0,32.203,23,0" Name="LBL_VERSION" VerticalAlignment="Top" Width="104" FontSize="10" ToolTip="Versión">0.8.4 Beta</Label>
+        <Rectangle Fill="#FFEEFFFF" Margin="25,63,23,24" RadiusX="10" RadiusY="10" Stroke="#55000000" />
+        <TextBox Margin="157,74,86,0" Name="TXT_USUARIO" MaxLength="12" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="27" VerticalAlignment="Top" ToolTip="Introduce aquí tu nick de usuario"></TextBox>
+        <PasswordBox KeyDown="TXT_PASSWORD_KeyDown" Margin="157,0,86,72" Name="TXT_PASSWORD" MaxLength="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Password="" Height="27" VerticalAlignment="Bottom" ToolTip="Introduce aquí tu contraseña" />
+        <Button Name="BTN_IDENTIFICARSE" Margin="38,0,227,35" Click="BTN_Identificarse_Click" Height="26" VerticalAlignment="Bottom">Identificarse</Button>
+        <Button Margin="0,0,132,35" Name="BTN_CREAR_CUENTA" Height="26" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="90" Click="BTN_CREAR_CUENTA_Click">Crear cuenta</Button>
+        <Button Margin="345,145,0,0" Name="BTN_CONFIGURACION" Click="BTN_CONFIGURACION_Click" Height="26" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91" ToolTip="Configurar los parámetros de conexión al servidor">Conf. Servidor</Button>
+        <Label Margin="78,107,315,72" HorizontalContentAlignment="Right">Contraseña:</Label>
+        <Label Margin="100,74,315,105" HorizontalContentAlignment="Right">Usuario:</Label>
+    </Grid>
+</UserControl>

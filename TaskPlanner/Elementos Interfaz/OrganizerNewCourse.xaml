@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="TaskPlanner.OrganizerNewCourse"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="452" Width="472" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+    <Grid Height="451" Name="grid1" Width="471" ClipToBounds="True" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Rectangle Fill="#FFEEEEEE" RadiusX="10" RadiusY="10" Stroke="#55000000" Margin="13,6,13,13" Grid.ColumnSpan="2" />
+        <Rectangle Fill="#FFEEFFFF" RadiusX="10" RadiusY="10" Stroke="#55000000" Margin="29,23,30,188" />
+        <Rectangle Fill="#FFEEFFFF" RadiusX="10" RadiusY="10" Stroke="#55000000" Margin="29,0,30,30" Height="116" VerticalAlignment="Bottom" />
+        <Label HorizontalContentAlignment="Right" Margin="70,61,0,0" VerticalContentAlignment="Center" Height="26" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79">Nombre:</Label>
+        <TextBox Height="26" IsEnabled="True" IsReadOnly="False" Margin="152,61,43,0" MaxLength="50" Name="TXT_NOMBRE" ToolTip="Nombre del curso" VerticalAlignment="Top" VerticalContentAlignment="Center" />
+        <Label HorizontalContentAlignment="Right" Margin="52,106,0,0" VerticalContentAlignment="Center" Height="26" HorizontalAlignment="Left" VerticalAlignment="Top" Width="97">Descripción:</Label>
+        <TextBox Margin="152,106,43,0" Name="TXT_DESCRIPCION" VerticalContentAlignment="Center" MaxLength="100" Height="26" VerticalAlignment="Top" IsReadOnly="False" IsEnabled="True" ToolTip="Descripción del curso" />
+        <Label HorizontalContentAlignment="Right" Margin="40,150,0,0" VerticalContentAlignment="Center" Height="27" HorizontalAlignment="Left" VerticalAlignment="Top" Width="109">Fecha Comienzo:</Label>
+        <TextBox Margin="152,150,43,0" Name="TXT_F_COMIENZO" VerticalContentAlignment="Center" MaxLength="10" Height="27" VerticalAlignment="Top" ToolTip="Fecha inicio (Formato: DD/MM/AAAA)" />
+        <Label Height="27" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="40,195,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="109">Fecha Finalización:</Label>
+        <TextBox Height="27" Margin="152,195,43,0" MaxLength="10" Name="TXT_F_FINALIZACION" ToolTip="Fecha finalización (Formato: DD/MM/AAAA)" VerticalAlignment="Top" VerticalContentAlignment="Center" />
+        <Button Margin="40,0,43,79" Name="BTN_CREARCURSO" Height="52" VerticalAlignment="Bottom" FontSize="15" Click="BTN_CREARCURSO_Click">Crear curso</Button>
+        <Button Height="28" Margin="40,0,143,42" Name="BTN_BORRAR" VerticalAlignment="Bottom" Background="#45FF0000" Visibility="Hidden" Click="BTN_BORRAR_Click">Borrar curso</Button>
+        <Button Height="28" Margin="0,0,43,42" Name="BTN_BACK" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="91" Click="BTN_BACK_Click" ToolTip="Regresa a la gestión de cursos">Atrás</Button>
+    </Grid>
+</UserControl>

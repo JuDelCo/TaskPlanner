@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="TaskPlanner.Task"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="69" Width="370" ContentStringFormat="">
+    <Grid>
+        <Rectangle Fill="#F9F9F9" RadiusX="5" RadiusY="5" Stroke="#55000000" Margin="0,1,0,1" Name="TaskRectangle" />
+        <Label Margin="39.245,0,130,0" Name="LBL_ASIGNATURA" VerticalContentAlignment="Center" FontSize="10" Height="28" VerticalAlignment="Top">&lt;Asignatura&gt;</Label>
+        <Label Margin="13,18,130,23" Name="LBL_TITULO" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="13">&lt;Título tarea&gt;</Label>
+        <Label Margin="13,37,5,4" Name="LBL_PREVIEW" VerticalContentAlignment="Center">&lt;Descripción tarea&gt;</Label>
+        <Rectangle Fill="#FFF9F9F9" Margin="15.651,6.66,0,0" Name="rectangle1" RadiusX="3" RadiusY="3" Stroke="#55000000" Height="14.541" VerticalAlignment="Top" HorizontalAlignment="Left" Width="19.869" />
+        <Label FontSize="10" Margin="13,-0.668,0,0" Name="LBL_PRIORIDAD" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="28" VerticalAlignment="Top" HorizontalAlignment="Left" Width="25.551">!</Label>
+        <Button Margin="0,1" Name="BTN_TAREA" BorderBrush="Transparent" BorderThickness="0" Opacity="0.3" Padding="1" Click="BTN_TAREA_Click" IsTabStop="True" Background="Transparent" ToolTip="Mostrar detalles de la tarea"></Button>
+        <Button FontSize="10" Margin="0,5.661,24.2,0" Name="BTN_COMPLETADO" Padding="0" Background="#FF99FF99" Click="BTN_COMPLETADO_Click" HorizontalAlignment="Right" Width="90.731" Height="18" VerticalAlignment="Top" ToolTip="Completar tarea">Completado √</Button>
+        <Button Margin="0,5.661,5,0" Name="BTN_ELIMINAR" Padding="0" FontSize="9" IsTabStop="True" BorderThickness="1" Background="#FFFF9999" Click="BTN_ELIMINAR_Click" HorizontalAlignment="Right" Width="18" Height="18" VerticalAlignment="Top" ToolTip="Eliminar tarea">X</Button>
+    </Grid>
+</UserControl>

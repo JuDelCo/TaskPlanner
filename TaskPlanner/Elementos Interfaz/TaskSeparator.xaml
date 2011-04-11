@@ -1,0 +1,9 @@
+﻿<UserControl x:Class="TaskPlanner.TaskSeparator"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="22.644" Width="370" FlowDirection="LeftToRight">
+    <Grid>
+        <Rectangle Fill="#FFEEEEDD" RadiusX="5" RadiusY="5" Stroke="#55000000" Margin="0,1,0,1"/>
+        <Label Margin="4,-11,10,-11" Name="TXT_SEPARADOR" VerticalContentAlignment="Center">&lt;Info Separador&gt;</Label>
+    </Grid>
+</UserControl>

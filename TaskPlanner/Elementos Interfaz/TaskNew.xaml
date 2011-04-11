@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="TaskPlanner.TaskNew"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="452" Width="472" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+    <Grid Height="451" Name="grid1" Width="471" ClipToBounds="True" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Rectangle Fill="#FFEEEEEE" RadiusX="10" RadiusY="10" Stroke="#55000000" Margin="13,6,13,13" Grid.ColumnSpan="2" />
+        <Rectangle Fill="#FFEEFFFF" RadiusX="10" RadiusY="10" Stroke="#55000000" Margin="29,23,30,153" />
+        <Rectangle Fill="#FFEEFFFF" RadiusX="10" RadiusY="10" Stroke="#55000000" Margin="29,0,30,30" Height="116" VerticalAlignment="Bottom" />
+        <Label Height="26" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="40,34,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="94">Título:</Label>
+        <TextBox Height="26" IsEnabled="True" IsReadOnly="False" Margin="141,34,54,0" MaxLength="30" Name="TXT_TITULO" VerticalAlignment="Top" VerticalContentAlignment="Center" ToolTip="Título de la tarea" />
+        <Label HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="40,64,0,0" VerticalContentAlignment="Center" Width="94" Height="26" VerticalAlignment="Top">Descripción:</Label>
+        <TextBox IsEnabled="True" IsReadOnly="False" Margin="141,64,54,0" MaxLength="500" Name="TXT_DESCRIPCION" VerticalContentAlignment="Top" Height="66" VerticalAlignment="Top" TextWrapping="Wrap" AcceptsReturn="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" ToolTip="Descripción detallada de la tarea" />
+        <Label Height="26" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="55,135,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="79">Prioridad:</Label>
+        <ComboBox Height="26" Margin="141,135,54,0" Name="TXT_COMBO_PRIORIDAD" VerticalAlignment="Top" SelectedIndex="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" ToolTip="Prioridad de la tarea">
+            <ComboBoxItem>Baja</ComboBoxItem>
+            <ComboBoxItem>Normal</ComboBoxItem>
+            <ComboBoxItem>Alta</ComboBoxItem>
+        </ComboBox>
+        <Label HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="40,166,0,0" VerticalContentAlignment="Center" Width="94" Height="26" VerticalAlignment="Top">Fecha objetivo:</Label>
+        <TextBox IsEnabled="True" IsReadOnly="False" Margin="141,166,54,0" MaxLength="10" Name="TXT_F_OBJETIVO" VerticalContentAlignment="Center" Height="26" VerticalAlignment="Top" ToolTip="Fecha objetivo (Formato: DD/MM/AAAA)" />
+        <Label Height="26" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="55,197,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="79">Curso:</Label>
+        <ComboBox Height="26" HorizontalContentAlignment="Center" Margin="141,197,54,0" Name="TXT_COMBO_CURSO" SelectedIndex="-1" VerticalAlignment="Top" VerticalContentAlignment="Center" ToolTip="(OPCIONAL) Curso de la asignatura de la tarea" SelectionChanged="TXT_COMBO_CURSO_SelectionChanged"></ComboBox>
+        <Label Height="26" HorizontalContentAlignment="Right" Margin="55,0,0,197" VerticalAlignment="Bottom" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="79">Asignatura:</Label>
+        <ComboBox Height="26" HorizontalContentAlignment="Center" Margin="141,0,118,197" Name="TXT_COMBO_ASIGNATURA" SelectedIndex="-1" VerticalAlignment="Bottom" VerticalContentAlignment="Center" ToolTip="(OPCIONAL) Asignatura de la tarea"></ComboBox>
+        <Button Height="26" HorizontalAlignment="Right" Margin="0,0,54,197" Name="BTN_LIMPIAR_ASG" ToolTip="Regresa a la gestión de tareas" VerticalAlignment="Bottom" Width="60" Click="BTN_LIMPIAR_ASG_Click">Limpiar</Button>
+        <Label Height="26" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="55,0,0,166" VerticalAlignment="Bottom" VerticalContentAlignment="Center" Width="79">Tipo:</Label>
+        <ComboBox Height="26" Margin="141,0,54,166" Name="TXT_COMBO_TIPO" VerticalAlignment="Bottom" SelectedIndex="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ToolTip="Tipo de la tarea">
+            <ComboBoxItem>Tarea</ComboBoxItem>
+            <ComboBoxItem>Examen</ComboBoxItem>
+            <ComboBoxItem>Evento</ComboBoxItem>
+            <ComboBoxItem>Reunión</ComboBoxItem>
+            <ComboBoxItem>Recordatorio</ComboBoxItem>
+        </ComboBox>
+        <Button FontSize="15" Height="52" Margin="40,0,43,79" Name="BTN_CREARTAREA" VerticalAlignment="Bottom" Click="BTN_CREARTAREA_Click">Crear tarea</Button>
+        <Button Height="28" Margin="40,0,143,42" Name="BTN_BORRAR" VerticalAlignment="Bottom" Background="#45FF0000" Visibility="Hidden" Click="BTN_BORRAR_Click">Borrar tarea</Button>
+        <Button Height="28" HorizontalAlignment="Right" Margin="0,0,43,42" Name="BTN_BACK" ToolTip="Regresa a la gestión de tareas" VerticalAlignment="Bottom" Width="91" Click="BTN_BACK_Click">Atrás</Button>
+    </Grid>
+</UserControl>

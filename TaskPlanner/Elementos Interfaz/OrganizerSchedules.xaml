@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="TaskPlanner.OrganizerSchedules"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="452" Width="472" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+    <Grid Height="451" Name="grid1" Width="471" ClipToBounds="True" ShowGridLines="False" SnapsToDevicePixels="False" HorizontalAlignment="Left" VerticalAlignment="Top" IsItemsHost="False">
+        <Rectangle Fill="#FFEEEEEE" RadiusX="10" RadiusY="10" Stroke="#55000000" Margin="13,6,13,13" />
+        <Rectangle Fill="#FFEEFFFF" Margin="29,0,30,30" RadiusX="10" RadiusY="10" Stroke="#55000000" Height="46" VerticalAlignment="Bottom" />
+        <Button HorizontalContentAlignment="Center" Margin="42,0,0,41" Name="BTN_ADDNEWSCHEDULE" FontSize="12" Click="BTN_ADDNEWSCHEDULE_Click" Height="27" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="183" ToolTip="Crear un nuevo horario">Nuevo Horario</Button>
+        <ComboBox Margin="0,0,41,41" Name="FILTRO" SelectedIndex="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SelectionChanged="FILTRO_SelectionChanged" Text="Todas las Asignaturas" Height="26.5" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="160"></ComboBox>
+        <Rectangle Fill="#FFEEFFFF" Margin="29,23,30,86" RadiusX="10" RadiusY="10" Stroke="#55000000" />
+        <ScrollViewer Name="ScrollViewer" CanContentScroll="False" VerticalScrollBarVisibility="Auto" VerticalContentAlignment="Top" IsDeferredScrollingEnabled="False" IsTabStop="False" SnapsToDevicePixels="False" Margin="29,24,41,87">
+            <StackPanel Height="Auto" Name="LISTA" Width="385" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        </ScrollViewer>
+        <Label Margin="230,0,196,40.73" Name="label1" Height="26.5" VerticalAlignment="Bottom">Filtro:</Label>
+        <Label Height="31" HorizontalContentAlignment="Center" Margin="0,175,0,0" Name="LBL_NOTFOUND" VerticalAlignment="Top" Visibility="Hidden">No se han encontrado horarios</Label>
+    </Grid>
+</UserControl>
